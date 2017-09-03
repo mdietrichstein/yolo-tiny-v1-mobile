@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		497745431F574AD5004BC7EE /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497745421F574AD5004BC7EE /* ColorPalette.swift */; };
+		4980CF111F49BD3A0034B347 /* YoloTinyV1Classifier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4980CF0F1F49BD3A0034B347 /* YoloTinyV1Classifier.mm */; };
+		4980CF191F49C6590034B347 /* frozen_yolo.pb in Resources */ = {isa = PBXBuildFile; fileRef = 4980CF181F49C6590034B347 /* frozen_yolo.pb */; };
+		49D35FDD1F52E35E00187461 /* YoloV1Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D35FDC1F52E35E00187461 /* YoloV1Box.swift */; };
+		49EFD1D91F53451C00CEF075 /* OverlayDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFD1D81F53451C00CEF075 /* OverlayDrawer.swift */; };
+		49FC220E1F2A628100D3935F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC220D1F2A628100D3935F /* AppDelegate.swift */; };
+		49FC22101F2A628100D3935F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC220F1F2A628100D3935F /* ViewController.swift */; };
+		49FC22131F2A628100D3935F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FC22111F2A628100D3935F /* Main.storyboard */; };
+		49FC22151F2A628100D3935F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FC22141F2A628100D3935F /* Assets.xcassets */; };
+		49FC22181F2A628100D3935F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FC22161F2A628100D3935F /* LaunchScreen.storyboard */; };
+		7520E0ED48A24775EAFC9DE0 /* libPods-YoloTinyV1Tensorflow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D13EDC49230AA5F8049607 /* libPods-YoloTinyV1Tensorflow.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		497745421F574AD5004BC7EE /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = Utils/ColorPalette.swift; sourceTree = "<group>"; };
+		4980CF0E1F49BD390034B347 /* YoloTinyV1Tensorflow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YoloTinyV1Tensorflow-Bridging-Header.h"; sourceTree = "<group>"; };
+		4980CF0F1F49BD3A0034B347 /* YoloTinyV1Classifier.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YoloTinyV1Classifier.mm; sourceTree = "<group>"; };
+		4980CF101F49BD3A0034B347 /* YoloTinyV1Classifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoloTinyV1Classifier.h; sourceTree = "<group>"; };
+		4980CF121F49BF520034B347 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		4980CF181F49C6590034B347 /* frozen_yolo.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = frozen_yolo.pb; sourceTree = "<group>"; };
+		49D35FDC1F52E35E00187461 /* YoloV1Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoloV1Box.swift; sourceTree = "<group>"; };
+		49EFD1D81F53451C00CEF075 /* OverlayDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayDrawer.swift; sourceTree = "<group>"; };
+		49FC220A1F2A628100D3935F /* YoloTinyV1Tensorflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoloTinyV1Tensorflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FC220D1F2A628100D3935F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49FC220F1F2A628100D3935F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49FC22121F2A628100D3935F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49FC22141F2A628100D3935F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49FC22171F2A628100D3935F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49FC22191F2A628100D3935F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D13EDC49230AA5F8049607 /* libPods-YoloTinyV1Tensorflow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YoloTinyV1Tensorflow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CD1E3D1565CD1E676021AB /* Pods-YoloTinyV1Tensorflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoloTinyV1Tensorflow.release.xcconfig"; path = "Pods/Target Support Files/Pods-YoloTinyV1Tensorflow/Pods-YoloTinyV1Tensorflow.release.xcconfig"; sourceTree = "<group>"; };
+		FF7017260CBF9735EAD540CD /* Pods-YoloTinyV1Tensorflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoloTinyV1Tensorflow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoloTinyV1Tensorflow/Pods-YoloTinyV1Tensorflow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49FC22071F2A628100D3935F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7520E0ED48A24775EAFC9DE0 /* libPods-YoloTinyV1Tensorflow.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		497745401F574AA5004BC7EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				497745421F574AD5004BC7EE /* ColorPalette.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		497745411F574AAF004BC7EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49EFD1D81F53451C00CEF075 /* OverlayDrawer.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		498AB51B1F4F2B4200A7E96A /* Classifiers */ = {
+			isa = PBXGroup;
+			children = (
+				49D35FDB1F52E32300187461 /* YoloTiny1V1 */,
+			);
+			name = Classifiers;
+			sourceTree = "<group>";
+		};
+		49D35FDB1F52E32300187461 /* YoloTiny1V1 */ = {
+			isa = PBXGroup;
+			children = (
+				4980CF0F1F49BD3A0034B347 /* YoloTinyV1Classifier.mm */,
+				4980CF101F49BD3A0034B347 /* YoloTinyV1Classifier.h */,
+				49D35FDC1F52E35E00187461 /* YoloV1Box.swift */,
+			);
+			name = YoloTiny1V1;
+			sourceTree = "<group>";
+		};
+		49FC22011F2A628100D3935F = {
+			isa = PBXGroup;
+			children = (
+				49FC220C1F2A628100D3935F /* YoloTinyV1Tensorflow */,
+				49FC220B1F2A628100D3935F /* Products */,
+				5B64FB631B542598908800E6 /* Pods */,
+				D9CFB75A07431BB7FB82E6AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49FC220B1F2A628100D3935F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FC220A1F2A628100D3935F /* YoloTinyV1Tensorflow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49FC220C1F2A628100D3935F /* YoloTinyV1Tensorflow */ = {
+			isa = PBXGroup;
+			children = (
+				497745411F574AAF004BC7EE /* Views */,
+				497745401F574AA5004BC7EE /* Utils */,
+				498AB51B1F4F2B4200A7E96A /* Classifiers */,
+				4980CF181F49C6590034B347 /* frozen_yolo.pb */,
+				49FC220D1F2A628100D3935F /* AppDelegate.swift */,
+				49FC220F1F2A628100D3935F /* ViewController.swift */,
+				49FC22111F2A628100D3935F /* Main.storyboard */,
+				49FC22141F2A628100D3935F /* Assets.xcassets */,
+				49FC22161F2A628100D3935F /* LaunchScreen.storyboard */,
+				49FC22191F2A628100D3935F /* Info.plist */,
+				4980CF0E1F49BD390034B347 /* YoloTinyV1Tensorflow-Bridging-Header.h */,
+			);
+			path = YoloTinyV1Tensorflow;
+			sourceTree = "<group>";
+		};
+		5B64FB631B542598908800E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF7017260CBF9735EAD540CD /* Pods-YoloTinyV1Tensorflow.debug.xcconfig */,
+				D5CD1E3D1565CD1E676021AB /* Pods-YoloTinyV1Tensorflow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9CFB75A07431BB7FB82E6AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4980CF121F49BF520034B347 /* libstdc++.tbd */,
+				61D13EDC49230AA5F8049607 /* libPods-YoloTinyV1Tensorflow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49FC22091F2A628100D3935F /* YoloTinyV1Tensorflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FC221C1F2A628100D3935F /* Build configuration list for PBXNativeTarget "YoloTinyV1Tensorflow" */;
+			buildPhases = (
+				34C3E7CDE7769927E92BF37B /* [CP] Check Pods Manifest.lock */,
+				49FC22061F2A628100D3935F /* Sources */,
+				49FC22071F2A628100D3935F /* Frameworks */,
+				49FC22081F2A628100D3935F /* Resources */,
+				D68442C28DECC78DFF5BC2EA /* [CP] Embed Pods Frameworks */,
+				63B09FA79066ED4CC2C43323 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoloTinyV1Tensorflow;
+			productName = YoloTinyV1Tensorflow;
+			productReference = 49FC220A1F2A628100D3935F /* YoloTinyV1Tensorflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49FC22021F2A628100D3935F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Marc Dietrichstein";
+				TargetAttributes = {
+					49FC22091F2A628100D3935F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VYPL32ZQZ7;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 49FC22051F2A628100D3935F /* Build configuration list for PBXProject "YoloTinyV1Tensorflow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49FC22011F2A628100D3935F;
+			productRefGroup = 49FC220B1F2A628100D3935F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49FC22091F2A628100D3935F /* YoloTinyV1Tensorflow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49FC22081F2A628100D3935F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4980CF191F49C6590034B347 /* frozen_yolo.pb in Resources */,
+				49FC22181F2A628100D3935F /* LaunchScreen.storyboard in Resources */,
+				49FC22151F2A628100D3935F /* Assets.xcassets in Resources */,
+				49FC22131F2A628100D3935F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34C3E7CDE7769927E92BF37B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoloTinyV1Tensorflow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B09FA79066ED4CC2C43323 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoloTinyV1Tensorflow/Pods-YoloTinyV1Tensorflow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68442C28DECC78DFF5BC2EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoloTinyV1Tensorflow/Pods-YoloTinyV1Tensorflow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49FC22061F2A628100D3935F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FC22101F2A628100D3935F /* ViewController.swift in Sources */,
+				49D35FDD1F52E35E00187461 /* YoloV1Box.swift in Sources */,
+				49FC220E1F2A628100D3935F /* AppDelegate.swift in Sources */,
+				4980CF111F49BD3A0034B347 /* YoloTinyV1Classifier.mm in Sources */,
+				49EFD1D91F53451C00CEF075 /* OverlayDrawer.swift in Sources */,
+				497745431F574AD5004BC7EE /* ColorPalette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49FC22111F2A628100D3935F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FC22121F2A628100D3935F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49FC22161F2A628100D3935F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FC22171F2A628100D3935F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49FC221A1F2A628100D3935F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49FC221B1F2A628100D3935F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49FC221D1F2A628100D3935F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7017260CBF9735EAD540CD /* Pods-YoloTinyV1Tensorflow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VYPL32ZQZ7;
+				INFOPLIST_FILE = YoloTinyV1Tensorflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PryIO.YoloTinyV1Tensorflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YoloTinyV1Tensorflow/YoloTinyV1Tensorflow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		49FC221E1F2A628100D3935F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5CD1E3D1565CD1E676021AB /* Pods-YoloTinyV1Tensorflow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VYPL32ZQZ7;
+				INFOPLIST_FILE = YoloTinyV1Tensorflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PryIO.YoloTinyV1Tensorflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YoloTinyV1Tensorflow/YoloTinyV1Tensorflow-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49FC22051F2A628100D3935F /* Build configuration list for PBXProject "YoloTinyV1Tensorflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FC221A1F2A628100D3935F /* Debug */,
+				49FC221B1F2A628100D3935F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FC221C1F2A628100D3935F /* Build configuration list for PBXNativeTarget "YoloTinyV1Tensorflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FC221D1F2A628100D3935F /* Debug */,
+				49FC221E1F2A628100D3935F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49FC22021F2A628100D3935F /* Project object */;
+}

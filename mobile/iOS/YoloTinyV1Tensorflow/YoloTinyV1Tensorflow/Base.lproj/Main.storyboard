@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A344b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YoloTinyV1Tensorflow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iaa-MM-VaM" userLabel="Camera Preview">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.71764705880000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n2h-4H-ekj" userLabel="Cropped Preview">
+                                <rect key="frame" x="16" y="36" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Xp-ZZ-90x"/>
+                                    <constraint firstAttribute="width" secondItem="n2h-4H-ekj" secondAttribute="height" multiplier="1:1" id="YOP-OO-VqX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iaa-MM-VaM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3mi-Gq-Y0w"/>
+                            <constraint firstItem="n2h-4H-ekj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Edi-gA-qZa"/>
+                            <constraint firstItem="Iaa-MM-VaM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="S0V-B4-mVi"/>
+                            <constraint firstItem="Iaa-MM-VaM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XTn-i0-bFT"/>
+                            <constraint firstItem="Iaa-MM-VaM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bhb-b1-OM6"/>
+                            <constraint firstItem="n2h-4H-ekj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="h1y-Fj-sja"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraPreviewView" destination="Iaa-MM-VaM" id="eG5-ys-915"/>
+                        <outlet property="croppedPreviewView" destination="n2h-4H-ekj" id="wTw-4T-ttn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

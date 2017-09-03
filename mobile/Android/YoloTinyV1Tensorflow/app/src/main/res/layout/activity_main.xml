@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="io.pry.ml.yolo.tiny.v1.tensorflow.MainActivity">
+
+    <io.pry.ml.yolo.tiny.v1.tensorflow.views.AutoFitTextureView
+        android:id="@+id/cameraTextureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/cameraImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextureView
+        android:id="@+id/overlayTextureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/cameraTextureView"
+        app:layout_constraintRight_toRightOf="@id/cameraTextureView"
+        app:layout_constraintTop_toTopOf="@id/cameraTextureView" />
+
+
+    <TextView
+        android:id="@+id/fpsTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_purple"
+        style="@android:style/TextAppearance.Medium" />
+</android.support.constraint.ConstraintLayout>
