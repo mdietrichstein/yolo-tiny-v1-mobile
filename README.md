@@ -1,7 +1,7 @@
 
 # Yolo for Android and iOS - Mobile Deep Learning Object Detection in Realtime
 
-This repository contains an implementation of the Yolo V1 Tiny objector detector for both Android and iOS.
+This repository contains an implementation of the (Tiny) Yolo V1 objector detector for both Android and iOS.
 
 ## Yolo?
 
