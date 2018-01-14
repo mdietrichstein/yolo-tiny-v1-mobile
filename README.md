@@ -54,14 +54,15 @@ This notebook documents the process of implementing Yolo in Keras, converting th
 
 ### 2. Follow the instructions in `notebooks/02_export_to_tf.ipynb` to export an optimized tensorflow model
 
-This notebook shows how to export the keras model to tensorflow and how to optimize ot for inference. The resulting `frozen_yolo.pb` file contains the tensorflow model that will be loaded by the mobile apps.
+This notebook shows how to export the keras model to tensorflow and how to optimize it for inference. The resulting model files contain the tensorflow model that will be loaded by the mobile apps.
 
-### 3. Include `frozen_yolo.pb` in mobile projects
+### 3. Include model file in mobile projects
 
 _iOS_: Open the project in XCode and drag and drop `frozen_yolo.pb` into XCode.
 
-_Android_: Create a folder named ` mobile/Android/YoloTinyV1Tensorflow/app/src/main/assets` and copy `frozen_yolo.pb` into it.
+_Android_: Create a folder named `mobile/Android/YoloTinyV1Tensorflow/app/src/main/assets` and copy `optimized_yolo.pb` into it.
 
+__Note__: You could try to use `optimized_yolo.pb` with iOS as well. It didn't work with the version of tensorflow I was using though.
 
 ## Improvements
 
